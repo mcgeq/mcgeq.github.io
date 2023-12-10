@@ -5,7 +5,13 @@
     <loc>http://www.gemc.club/tags/blog/</loc>
     <lastmod>2023-12-10T13:33:42+08:00</lastmod>
   </url><url>
+    <loc>http://www.gemc.club/categories/</loc>
+    <lastmod>2023-12-10T13:33:42+08:00</lastmod>
+  </url><url>
     <loc>http://www.gemc.club/tags/hugo/</loc>
+    <lastmod>2023-12-10T13:33:42+08:00</lastmod>
+  </url><url>
+    <loc>http://www.gemc.club/categories/hugo/</loc>
     <lastmod>2023-12-10T13:33:42+08:00</lastmod>
   </url><url>
     <loc>http://www.gemc.club/posts/hugo-is-deployed-on-github-pages/</loc>
@@ -22,8 +28,6 @@
   </url><url>
     <loc>http://www.gemc.club/about/</loc>
     <lastmod>2023-12-09T15:50:16+08:00</lastmod>
-  </url><url>
-    <loc>http://www.gemc.club/categories/</loc>
   </url><url>
     <loc>http://www.gemc.club/series/</loc>
   </url>
