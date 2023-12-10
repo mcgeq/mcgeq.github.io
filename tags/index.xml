@@ -6,6 +6,21 @@
     <description>Recent content in Tags on Mcge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 10 Dec 2023 13:07:05 +0800</lastBuildDate>
     <atom:link href="http://www.gemc.club/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>blog</title>
+      <link>http://www.gemc.club/tags/blog/</link>
+      <pubDate>Sun, 10 Dec 2023 13:07:05 +0800</pubDate>
+      <guid>http://www.gemc.club/tags/blog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>hugo</title>
+      <link>http://www.gemc.club/tags/hugo/</link>
+      <pubDate>Sun, 10 Dec 2023 13:07:05 +0800</pubDate>
+      <guid>http://www.gemc.club/tags/hugo/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
