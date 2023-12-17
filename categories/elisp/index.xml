@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Mcge</title>
-    <link>http://www.gemc.club/posts/</link>
-    <description>Recent content in Posts on Mcge</description>
+    <title>Elisp on Mcge</title>
+    <link>http://www.gemc.club/categories/elisp/</link>
+    <description>Recent content in Elisp on Mcge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 17 Dec 2023 15:12:00 +0800</lastBuildDate>
-    <atom:link href="http://www.gemc.club/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.gemc.club/categories/elisp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>emacs 的 cl-lib 包</title>
       <link>http://www.gemc.club/posts/emacs-%E7%9A%84-cl-lib-%E5%8C%85/</link>
       <pubDate>Sun, 17 Dec 2023 15:12:00 +0800</pubDate>
       <guid>http://www.gemc.club/posts/emacs-%E7%9A%84-cl-lib-%E5%8C%85/</guid>
       <description>cl-lib 是什么 cl-lib 包其为 emacs 提供了许多函数和控制结构。&#xA;cl-lib 的组成 cl-lib.el 其包含了基础的函数以及关于整个包的信息，包含了所有必要的 `autoload‘指令。 cl-extra.el 包含了一些复杂的函数 cl-seq.el 包含操作序列的高级函数 cl-macs.el 包含宏，其提供了语法扩展 常用的控制结构 cl-incf/cl-decf 这两个函数接受一个参数，以及一个可选参数。只有一个参数，*cl-incf* 将变量加 1，*cl-decf* 减去 1&#xA;1 2 3 (setq x 1) (cl-incf x) (cl-decf x) </description>
-    </item>
-    <item>
-      <title>Hugo is deployed on GitHub Pages</title>
-      <link>http://www.gemc.club/posts/hugo-is-deployed-on-github-pages/</link>
-      <pubDate>Sun, 10 Dec 2023 13:12:00 +0800</pubDate>
-      <guid>http://www.gemc.club/posts/hugo-is-deployed-on-github-pages/</guid>
-      <description>安装 hugo 环境 Arch Linux 部署 blog</description>
     </item>
   </channel>
 </rss>

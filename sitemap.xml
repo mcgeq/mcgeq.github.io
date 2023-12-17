@@ -2,10 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://www.gemc.club/tags/blog/</loc>
-    <lastmod>2023-12-10T13:33:42+08:00</lastmod>
-  </url><url>
     <loc>http://www.gemc.club/categories/</loc>
+    <lastmod>2023-12-17T15:12:59+08:00</lastmod>
+  </url><url>
+    <loc>http://www.gemc.club/categories/elisp/</loc>
+    <lastmod>2023-12-17T15:12:59+08:00</lastmod>
+  </url><url>
+    <loc>http://www.gemc.club/tags/emacs/</loc>
+    <lastmod>2023-12-17T15:12:59+08:00</lastmod>
+  </url><url>
+    <loc>http://www.gemc.club/posts/emacs-%E7%9A%84-cl-lib-%E5%8C%85/</loc>
+    <lastmod>2023-12-17T15:12:59+08:00</lastmod>
+  </url><url>
+    <loc>http://www.gemc.club/</loc>
+    <lastmod>2023-12-17T15:12:59+08:00</lastmod>
+  </url><url>
+    <loc>http://www.gemc.club/posts/</loc>
+    <lastmod>2023-12-17T15:12:59+08:00</lastmod>
+  </url><url>
+    <loc>http://www.gemc.club/tags/</loc>
+    <lastmod>2023-12-17T15:12:59+08:00</lastmod>
+  </url><url>
+    <loc>http://www.gemc.club/tags/blog/</loc>
     <lastmod>2023-12-10T13:33:42+08:00</lastmod>
   </url><url>
     <loc>http://www.gemc.club/tags/hugo/</loc>
@@ -15,15 +33,6 @@
     <lastmod>2023-12-10T13:33:42+08:00</lastmod>
   </url><url>
     <loc>http://www.gemc.club/posts/hugo-is-deployed-on-github-pages/</loc>
-    <lastmod>2023-12-10T13:33:42+08:00</lastmod>
-  </url><url>
-    <loc>http://www.gemc.club/</loc>
-    <lastmod>2023-12-10T13:33:42+08:00</lastmod>
-  </url><url>
-    <loc>http://www.gemc.club/posts/</loc>
-    <lastmod>2023-12-10T13:33:42+08:00</lastmod>
-  </url><url>
-    <loc>http://www.gemc.club/tags/</loc>
     <lastmod>2023-12-10T13:33:42+08:00</lastmod>
   </url><url>
     <loc>http://www.gemc.club/about/</loc>

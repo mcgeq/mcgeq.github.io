@@ -6,8 +6,15 @@
     <description>Recent content in Categories on Mcge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Dec 2023 13:12:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 17 Dec 2023 15:12:00 +0800</lastBuildDate>
     <atom:link href="http://www.gemc.club/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Elisp</title>
+      <link>http://www.gemc.club/categories/elisp/</link>
+      <pubDate>Sun, 17 Dec 2023 15:12:00 +0800</pubDate>
+      <guid>http://www.gemc.club/categories/elisp/</guid>
+      <description></description>
+    </item>
     <item>
       <title>hugo</title>
       <link>http://www.gemc.club/categories/hugo/</link>
