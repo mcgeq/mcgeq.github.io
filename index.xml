@@ -6,8 +6,15 @@
     <description>Recent content on Mcge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Dec 2023 04:46:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jan 2024 14:27:00 +0800</lastBuildDate>
     <atom:link href="http://www.gemc.club/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>什么是.NET or .NET Framework or .NET Core?</title>
+      <link>http://www.gemc.club/posts/%E4%BB%80%E4%B9%88%E6%98%AF-.net-or-.net-framework-or-/</link>
+      <pubDate>Sat, 13 Jan 2024 14:27:00 +0800</pubDate>
+      <guid>http://www.gemc.club/posts/%E4%BB%80%E4%B9%88%E6%98%AF-.net-or-.net-framework-or-/</guid>
+      <description>什么是.NET&#xA;.NET 是一个*免费的跨平台开放源代码*开发平台，用于生成多种类型的应用程序。 .NET 应用和库是通过源代码和项目文件，使用.NET CLI 或集成开发环境生成的。&#xA;什么是.NET </description>
+    </item>
     <item>
       <title>emacs 的 cl-lib 包</title>
       <link>http://www.gemc.club/posts/emacs-%E7%9A%84-cl-lib-%E5%8C%85/</link>
