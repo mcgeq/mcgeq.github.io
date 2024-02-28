@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Mcge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Jan 2024 14:27:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 28 Feb 2024 21:35:23 +0800</lastBuildDate>
     <atom:link href="http://www.gemc.club/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>idea_custom_method_annotation</title>
+      <link>http://www.gemc.club/posts/idea-custom-method-annotation/</link>
+      <pubDate>Wed, 28 Feb 2024 21:32:00 +0800</pubDate>
+      <guid>http://www.gemc.club/posts/idea-custom-method-annotation/</guid>
+      <description>IDEA 自定义方法注释 使用快捷键=Ctrl+Alt+S=快捷键打开设置界面 点击 Editor-&amp;gt;Live Templates 将 Tab 改成 Enter，点击 + 号，添加一个 Template Group，随便输入一个名称 新建之后选中，再次点击+号，新建一个 Live Template 给 Abbreviation 输入一个快捷键，比如**,Description 是描述，Template Text 是模板 Template Text 内容 模板不能以/开头，不然无法获取参数和方法返回类型 ** * @Description: TODO $params$ $return$ * @Author: $user$ $date$ $time$ * @Version 1.0 */ 编辑变量 params 代表方法的参数，这里将会统一对齐 1 groovyScript(&amp;#34;if(\&amp;#34;${_1}\&amp;#34;.length() == 2) {return &amp;#39;&amp;#39;;} else {def result=&amp;#39;&amp;#39;; def params=\&amp;#34;${_1}\&amp;#34;.</description>
+    </item>
     <item>
       <title>什么是.NET or .NET Framework or .NET Core?</title>
       <link>http://www.gemc.club/posts/%E4%BB%80%E4%B9%88%E6%98%AF-.net-or-.net-framework-or-/</link>
