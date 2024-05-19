@@ -13,8 +13,8 @@
 <meta property="og:url" content="http://www.gemc.club/tags/" />
 
 
-
-    <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Tags"/>
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Tags"/>
 <meta name="twitter:description" content=""/>
 
     
@@ -252,7 +252,7 @@
         <div class="tag-taxo-card">
             <div class="tag-taxo-text">
                 <span><i class="fa fa-tag"></i></span>
-                Blog
+                blog
             </div>
         </div>
     </a>
@@ -265,7 +265,7 @@
         <div class="tag-taxo-card">
             <div class="tag-taxo-text">
                 <span><i class="fa fa-tag"></i></span>
-                Emacs
+                emacs
             </div>
         </div>
     </a>
@@ -278,7 +278,20 @@
         <div class="tag-taxo-card">
             <div class="tag-taxo-text">
                 <span><i class="fa fa-tag"></i></span>
-                Hugo
+                hugo
+            </div>
+        </div>
+    </a>
+</div>
+
+
+
+<div class="taxo-col taxo-col-tag">
+    <a href="http://www.gemc.club/tags/rust/">
+        <div class="tag-taxo-card">
+            <div class="tag-taxo-text">
+                <span><i class="fa fa-tag"></i></span>
+                Rust
             </div>
         </div>
     </a>
@@ -319,19 +332,19 @@
                     /posts/
                 '>
             <p>posts</p>
-            <p>4</p>
+            <p>5</p>
         </a>
         <a href='
                     /categories/
                 '>
             <p>categories</p>
-            <p>2</p>
+            <p>3</p>
         </a>
         <a href='
                     /tags/
                 '>
             <p>tags</p>
-            <p>3</p>
+            <p>4</p>
         </a>
     </div>
 
@@ -371,6 +384,28 @@
         <div class="xian"></div>
     </div>
     <div class="list">
+        
+            <a href="http://www.gemc.club/posts/%E7%AC%AC%E4%B8%80%E7%AB%A0-rust-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
+                
+<a href="http://www.gemc.club/posts/%E7%AC%AC%E4%B8%80%E7%AB%A0-rust-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
+    <div class="list-item">
+        <div class="icon-other-root">
+            
+                <div class="icon-other" style="background-image: url( /images/default.jpg );"></div>
+            
+        </div>
+        <div class="list-right">
+            <div class="other-title">
+                第一章 Rust 基础知识
+            </div>
+            <div class="other-summary">1.1 安装&amp;&amp;更新 1.2 编译器与包管理工具及开发环境搭建 1.3 获取 Rust 库、换源
+安装与更新 Rust 安装比较简单，依据官网进行安装即可。 本学习笔记使用 Windows11 进行。因此选择下载=RUSTUP-INIT.EXE(64 位)=。 下载成功后，双击运行，按照提示进行安装即可。查看安装是否成功。
+rustc -V rustup show cargo &ndash;version rustup 基本使用 升级 rustup update 更新 rust rustup install stable|nightly 安装指定 rust 版本 stable: 稳定版 nightly: 夜版，最新版本，每天构建的 版本管理 rustup default nightly 设置非=stable=为默认版本 卸载 rustup self uninstall 添加组件 rustup component add 编译器与包管理工具记忆环境搭建 编译器 rustc rustc -V 查看版本 rustc -o out source.</div>
+            <div class="other-date">2024-4-21</div>
+        </div>
+    </div>
+</a>
+            </a>
         
             <a href="http://www.gemc.club/posts/idea-custom-method-annotation/">
                 
@@ -543,13 +578,16 @@ cl-lib 的组成 cl-lib.el 其包含了基础的函数以及关于整个包的�
     
     
 
+    
+    
+
 
 
 
 <script type="text/javascript">
     var mode_custom = "auto";
-    var postsCount =  4 ;
-    var arrPosts = [{"link":"http://www.gemc.club/posts/idea-custom-method-annotation/","plain":"IDEA 自定义方法注释 使用快捷键=Ctrl+Alt+S=快捷键打开设置界面 点击 Editor-\u0026gt;Live Templates 将 Tab 改成 Enter，点击 + 号，添加一个 Template Group，随便输入一个名称 新建之后选中，再次点击+号，新建一个 Live Template 给 Abbreviation 输入一个快捷键，比如**,Description 是描述，Template Text 是模板 Template Text 内容 模板不能以/开头，不然无法获取参数和方法返回类型 ** * @Description: TODO $params$ $return$ * @Author: $user$ $date$ $time$ * @Version 1.0 */ 编辑变量 params 代表方法的参数，这里将会统一对齐 1 groovyScript(\u0026#34;if(\\\u0026#34;${_1}\\\u0026#34;.length() == 2) {return \u0026#39;\u0026#39;;} else {def result=\u0026#39;\u0026#39;; def params=\\\u0026#34;${_1}\\\u0026#34;.replaceAll(\u0026#39;[\\\\\\\\[|\\\\\\\\]|\\\\\\\\s]\u0026#39;, \u0026#39;\u0026#39;).split(\u0026#39;,\u0026#39;).toList();for(i = 0; i \u0026lt; params.size(); i++) {if(i==0){result+=\u0026#39;* @Param \\\\t\\\\t\\\\t\\\\t\u0026#39; + params[i] + \u0026#39;: \u0026#39;}else{result+=\u0026#39;\\\\n\\\\t\u0026#39; + \u0026#39; * @Param \\\\t\\\\t\\\\t\\\\t\u0026#39; + params[i] + \u0026#39;: \u0026#39;}}; return result;}\u0026#34;, methodParameters()); return 代表方法返回类型 1 groovyScript(\u0026#34;def returnType = \\\u0026#34;${_1}\\\u0026#34;; def result = \u0026#39;* @return: \\\\t\\\\t\\\\t\u0026#39; + returnType; return result;\u0026#34;, methodReturnType()); user 代表作者，这里用的是自己的，也可以使用 idea 自带的 user() 1 groovyScript(\u0026#34;def result = \u0026#39;mcge\u0026#39;; return result;\u0026#34;) date 月 time 分别表示日期与时间 最下面的 Applicable 表示这个模板应用的位置，这里全选 最后的配置 结果展示 ","pubDate":"2024-02-28","title":"idea_custom_method_annotation"},{"link":"http://www.gemc.club/posts/%E4%BB%80%E4%B9%88%E6%98%AF-.net-or-.net-framework-or-/","plain":"什么是.NET\n.NET 是一个*免费的跨平台开放源代码*开发平台，用于生成多种类型的应用程序。 .NET 应用和库是通过源代码和项目文件，使用.NET CLI 或集成开发环境生成的。\n什么是.NET ","pubDate":"2024-01-13","title":"什么是.NET or .NET Framework or .NET Core?"},{"link":"http://www.gemc.club/posts/emacs-%E7%9A%84-cl-lib-%E5%8C%85/","plain":"cl-lib 是什么 cl-lib 包其为 emacs 提供了许多函数和控制结构。\ncl-lib 的组成 cl-lib.el 其包含了基础的函数以及关于整个包的信息，包含了所有必要的 `autoload‘指令。 cl-extra.el 包含了一些复杂的函数 cl-seq.el 包含操作序列的高级函数 cl-macs.el 包含宏，其提供了语法扩展 常用的控制结构 cl-incf/cl-decf 这两个函数接受一个参数，以及一个可选参数。只有一个参数，*cl-incf* 将变量加 1，*cl-decf* 减去 1\n1 2 3 (setq x 1) (cl-incf x) (cl-decf x) ","pubDate":"2023-12-17","title":"emacs 的 cl-lib 包"},{"link":"http://www.gemc.club/posts/hugo-is-deployed-on-github-pages/","plain":"安装 hugo 环境 Arch Linux 部署 blog\n","pubDate":"2023-12-10","title":"Hugo is deployed on GitHub Pages"}];
+    var postsCount =  5 ;
+    var arrPosts = [{"link":"http://www.gemc.club/posts/%E7%AC%AC%E4%B8%80%E7%AB%A0-rust-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/","plain":"1.1 安装\u0026amp;\u0026amp;更新 1.2 编译器与包管理工具及开发环境搭建 1.3 获取 Rust 库、换源\n安装与更新 Rust 安装比较简单，依据官网进行安装即可。 本学习笔记使用 Windows11 进行。因此选择下载=RUSTUP-INIT.EXE(64 位)=。 下载成功后，双击运行，按照提示进行安装即可。查看安装是否成功。\nrustc -V rustup show cargo \u0026ndash;version rustup 基本使用 升级 rustup update 更新 rust rustup install stable|nightly 安装指定 rust 版本 stable: 稳定版 nightly: 夜版，最新版本，每天构建的 版本管理 rustup default nightly 设置非=stable=为默认版本 卸载 rustup self uninstall 添加组件 rustup component add 编译器与包管理工具记忆环境搭建 编译器 rustc rustc -V 查看版本 rustc -o out source.rs 编译生成二进制文件 rustc \u0026ndash;crate-type lib source.rs 编译生产库文件 开发环境 VSCode 开发工具 rust-analyzer: lsp 插件 Error Lens: 错误提示 cargo 包管理工具 cargo 底层还是使用 rustc 进行编译\n基本命令 cargo new project-name 创建一个二进制项目 cargo new project-name \u0026ndash;lib 创建一个库文件项目 cargo build 构建项目 cargo build \u0026ndash;release 生成优化的可执行文件 cargo check 快速检测代码语法 cargo run 运行 cargo test 测试 项目结构 项目 库 配置文件 Cargo.toml package name: 项目名称 version: 版本 edition: rust 版本 dependencies 安装依赖项 构建依赖 开发依赖 工作目录依赖，同时有多个项目或库 获取 Rust 库以及换源 crate 库 crate Rust 第三方库 添加库 修改 Cargo.toml 文件 找到库然后手动添加 cargo add crate 使用 cargo 工具添加 Cargo 插件 cargo-edit cargo install cargo-edit 安装 添加库 cargo add dependency_name 添加 crate cargo add dependency_name@version 添加指定版本的 cargo add \u0026ndash;dev name 添加开发依赖 cargo add \u0026ndash;build name 添加构建依赖 删除库 cargo remove name 删除库 换源 这里换成的是字节跳动的源 RsProxy 切换 rustup 的源 RUSTUP_DIST_SERVER 添加到环境变量 RUSTUP_UPDATE_ROOT 添加到环境变量 1 2 export RUSTUP_DIST_SERVER=\u0026#34;https://rsproxy.cn\u0026#34; export RUSTUP_UPDATE_ROOT=\u0026#34;https://rsproxy.cn/rustup\u0026#34; 设置 crate 源 [source.crates-io] replace-with = \u0026#39;rsproxy-sparse\u0026#39; [source.rsproxy] registry = \u0026#34;https://rsproxy.cn/crates.io-index\u0026#34; [source.rsproxy-sparse] registry = \u0026#34;sparse+https://rsproxy.cn/index/\u0026#34; [registries.rsproxy] index = \u0026#34;https://rsproxy.cn/crates.io-index\u0026#34; [net] git-fetch-with-cli = true 文件路径\nwindows : C:\\Users\\\u0026lt;user\u0026gt;\\.cargo\\config\nLinux : $HOME\\.cargo\\config\n小结 Rust 第一章到这里就要结束了,基本介绍了如何安装 rust 以及一些基本的配置.\n","pubDate":"2024-04-21","title":"第一章 Rust 基础知识"},{"link":"http://www.gemc.club/posts/idea-custom-method-annotation/","plain":"IDEA 自定义方法注释 使用快捷键=Ctrl+Alt+S=快捷键打开设置界面 点击 Editor-\u0026gt;Live Templates 将 Tab 改成 Enter，点击 + 号，添加一个 Template Group，随便输入一个名称 新建之后选中，再次点击+号，新建一个 Live Template 给 Abbreviation 输入一个快捷键，比如**,Description 是描述，Template Text 是模板 Template Text 内容 模板不能以/开头，不然无法获取参数和方法返回类型 ** * @Description: TODO $params$ $return$ * @Author: $user$ $date$ $time$ * @Version 1.0 */ 编辑变量 params 代表方法的参数，这里将会统一对齐 1 groovyScript(\u0026#34;if(\\\u0026#34;${_1}\\\u0026#34;.length() == 2) {return \u0026#39;\u0026#39;;} else {def result=\u0026#39;\u0026#39;; def params=\\\u0026#34;${_1}\\\u0026#34;.replaceAll(\u0026#39;[\\\\\\\\[|\\\\\\\\]|\\\\\\\\s]\u0026#39;, \u0026#39;\u0026#39;).split(\u0026#39;,\u0026#39;).toList();for(i = 0; i \u0026lt; params.size(); i++) {if(i==0){result+=\u0026#39;* @Param \\\\t\\\\t\\\\t\\\\t\u0026#39; + params[i] + \u0026#39;: \u0026#39;}else{result+=\u0026#39;\\\\n\\\\t\u0026#39; + \u0026#39; * @Param \\\\t\\\\t\\\\t\\\\t\u0026#39; + params[i] + \u0026#39;: \u0026#39;}}; return result;}\u0026#34;, methodParameters()); return 代表方法返回类型 1 groovyScript(\u0026#34;def returnType = \\\u0026#34;${_1}\\\u0026#34;; def result = \u0026#39;* @return: \\\\t\\\\t\\\\t\u0026#39; + returnType; return result;\u0026#34;, methodReturnType()); user 代表作者，这里用的是自己的，也可以使用 idea 自带的 user() 1 groovyScript(\u0026#34;def result = \u0026#39;mcge\u0026#39;; return result;\u0026#34;) date 月 time 分别表示日期与时间 最下面的 Applicable 表示这个模板应用的位置，这里全选 最后的配置 结果展示 ","pubDate":"2024-02-28","title":"idea_custom_method_annotation"},{"link":"http://www.gemc.club/posts/%E4%BB%80%E4%B9%88%E6%98%AF-.net-or-.net-framework-or-/","plain":"什么是.NET\n.NET 是一个*免费的跨平台开放源代码*开发平台，用于生成多种类型的应用程序。 .NET 应用和库是通过源代码和项目文件，使用.NET CLI 或集成开发环境生成的。\n什么是.NET ","pubDate":"2024-01-13","title":"什么是.NET or .NET Framework or .NET Core?"},{"link":"http://www.gemc.club/posts/emacs-%E7%9A%84-cl-lib-%E5%8C%85/","plain":"cl-lib 是什么 cl-lib 包其为 emacs 提供了许多函数和控制结构。\ncl-lib 的组成 cl-lib.el 其包含了基础的函数以及关于整个包的信息，包含了所有必要的 `autoload‘指令。 cl-extra.el 包含了一些复杂的函数 cl-seq.el 包含操作序列的高级函数 cl-macs.el 包含宏，其提供了语法扩展 常用的控制结构 cl-incf/cl-decf 这两个函数接受一个参数，以及一个可选参数。只有一个参数，*cl-incf* 将变量加 1，*cl-decf* 减去 1\n1 2 3 (setq x 1) (cl-incf x) (cl-decf x) ","pubDate":"2023-12-17","title":"emacs 的 cl-lib 包"},{"link":"http://www.gemc.club/posts/hugo-is-deployed-on-github-pages/","plain":"安装 hugo 环境 Arch Linux 部署 blog\n","pubDate":"2023-12-10","title":"Hugo is deployed on GitHub Pages"}];
     var search_theEnd = "The End";
     var search_nothing = "Nothing was found";
     var search_found = "Found";
