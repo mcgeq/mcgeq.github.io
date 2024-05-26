@@ -6,8 +6,15 @@
     <description>Recent content in Series on Mcge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Apr 2024 21:03:14 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 26 May 2024 16:29:41 +0800</lastBuildDate>
     <atom:link href="http://www.gemc.club/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TypeScript</title>
+      <link>http://www.gemc.club/series/typescript/</link>
+      <pubDate>Sun, 26 May 2024 16:29:00 +0800</pubDate>
+      <guid>http://www.gemc.club/series/typescript/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Rust</title>
       <link>http://www.gemc.club/series/rust/</link>

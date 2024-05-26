@@ -6,8 +6,15 @@
     <description>Recent content on Mcge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Apr 2024 21:03:14 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 26 May 2024 16:29:41 +0800</lastBuildDate>
     <atom:link href="http://www.gemc.club/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>learnning-typescript</title>
+      <link>http://www.gemc.club/posts/learnning-typescript/</link>
+      <pubDate>Sun, 26 May 2024 16:29:00 +0800</pubDate>
+      <guid>http://www.gemc.club/posts/learnning-typescript/</guid>
+      <description>本学习文档时学习慕课网的 TS+React18 高仿 AntD&#xA;欢迎来到 TypeScript 任何可以使用 JavaScript 来编写的=优秀=的大型应用，最终会由 TypeScript 编写。 &amp;ndash; 韩骏，2019&#xA;编程语言的类型 动态类型 静态类型 TypeScript 究竟是什么 JavaScript 超集 静态类型风格的类型系统 从 es6 到 es14 甚至是 esnext 的语法支持 兼容浏览器、系统、服务器 开源 为什么要使用 TypeScript 程序更容易理解 效率更高 更少的错误 编译期间能够发现大部分错误 好的包容性 安装 TypeScript 环境 windows11 vim9 nodejs20^ pnpm 安装 1 pnpm add -g typescript 数据类型 JavaScript 数据类型 原始类型</description>
+    </item>
     <item>
       <title>第一章 Rust 基础知识</title>
       <link>http://www.gemc.club/posts/%E7%AC%AC%E4%B8%80%E7%AB%A0-rust-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link>
