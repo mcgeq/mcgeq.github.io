@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Mcge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 May 2024 16:29:41 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 08 Jun 2024 11:04:22 +0800</lastBuildDate>
     <atom:link href="http://www.gemc.club/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tsconfig 核心配置文件详解</title>
+      <link>http://www.gemc.club/posts/tsconfig-%E6%A0%B8%E5%BF%83%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Sat, 08 Jun 2024 11:04:00 +0800</pubDate>
+      <guid>http://www.gemc.club/posts/tsconfig-%E6%A0%B8%E5%BF%83%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/</guid>
+      <description>基本选项 compilerOptions include exclude extends compilerOptions 编译器选项，tsc 编译代码时会按照配置选项进行编译。&#xA;allowUnreachableCode 不报告执行不到的代码错误 undefined 默认，提供建议作为警告 true 无法访问的代码将被忽略 false 引发有关无法访问代码的错误 allowUnusedLabels 允许未使用的标签 undefined 默认，提供建议警告 true 未使用的标签将被忽略 false 引发有关未使用标签的错误 alwaysStrict 始终严格模式，确保在 ECMAScript 严格模式下解析文件 并为每个源文件使用 use strict exactOptionalPropertyTypes 确切的可选属性类型 启用，TypeScript 处理属性或 type interfaces 具有?前缀的属性有更严格的规则 noUnusedLocals 报告未使用的变量 noUnusedParameters 报告未使用的参数 noFallthroughCasesInSwitch 防止 switch 语句贯穿 noEmit 禁止生成 js 文件 strict 严格模式 lib 库选项 编译时依赖的库 target 目标选项 tsc 编译代码时以哪个版本进行编译 module 指定生成哪个模块系统代码 None CommonJS AMD System UMD ES6 ES2015 ES2020 ES2022 ESNext rootDir 编译的文件目录 outDir tsc 编译后输出的文件目录 moduleResolution 模块解析策略 classic node10 node16 nodenext bundler node 采用 node 模块解析的方式查找文件 [从内往外查找 import 引入的文件] classic 采用 classic 模块解析的方式查找文件[从外往内查找 import 引入的文件] resolveJsonModule 是否支持引入 json 文件 allowJs 允许 JS 文件引入 checkJs 检查 JS 与 allowJs 配合使用 checkJs 启用时，js 文件会报告错误，相当于在 js 文件顶部包含 @ts-check 详细的编译器选项compilerOptions</description>
+    </item>
     <item>
       <title>learnning-typescript</title>
       <link>http://www.gemc.club/posts/learnning-typescript/</link>

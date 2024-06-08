@@ -3,18 +3,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Mcge | Blog</title>
-    <meta name="description" content=" ">
-    <link rel="canonical" href="http://www.gemc.club/tags/blog/" />
+    <title>Mcge | tsconfig 核心配置文件详解</title>
+    <meta name="description" content="基本选项 compilerOptions include exclude extends compilerOptions 编译器选项，tsc 编译代码时会按照配置选项进行编译。
+allowUnreachableCode 不报告执行不到的代码错误 undefined 默认，提供建议作为警告 true 无法访问的代码将被忽略 false 引发有关无法访问代码的错误 allowUnusedLabels 允许未使用的标签 undefined 默认，提供建议警告 true 未使用的标签将被忽略 false 引发有关未使用标签的错误 alwaysStrict 始终严格模式，确保在 ECMAScript 严格模式下解析文件 并为每个源文件使用 use strict exactOptionalPropertyTypes 确切的可选属性类型 启用，TypeScript 处理属性或 type interfaces 具有?前缀的属性有更严格的规则 noUnusedLocals 报告未使用的变量 noUnusedParameters 报告未使用的参数 noFallthroughCasesInSwitch 防止 switch 语句贯穿 noEmit 禁止生成 js 文件 strict 严格模式 lib 库选项 编译时依赖的库 target 目标选项 tsc 编译代码时以哪个版本进行编译 module 指定生成哪个模块系统代码 None CommonJS AMD System UMD ES6 ES2015 ES2020 ES2022 ESNext rootDir 编译的文件目录 outDir tsc 编译后输出的文件目录 moduleResolution 模块解析策略 classic node10 node16 nodenext bundler node 采用 node 模块解析的方式查找文件 [从内往外查找 import 引入的文件] classic 采用 classic 模块解析的方式查找文件[从外往内查找 import 引入的文件] resolveJsonModule 是否支持引入 json 文件 allowJs 允许 JS 文件引入 checkJs 检查 JS 与 allowJs 配合使用 checkJs 启用时，js 文件会报告错误，相当于在 js 文件顶部包含 @ts-check 详细的编译器选项compilerOptions ">
+    <link rel="canonical" href="http://www.gemc.club/posts/tsconfig-%E6%A0%B8%E5%BF%83%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/" />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <meta property="og:title" content="Blog" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://www.gemc.club/tags/blog/" />
+    <meta property="og:title" content="tsconfig 核心配置文件详解" />
+<meta property="og:description" content="基本选项 compilerOptions include exclude extends compilerOptions 编译器选项，tsc 编译代码时会按照配置选项进行编译。
+allowUnreachableCode 不报告执行不到的代码错误 undefined 默认，提供建议作为警告 true 无法访问的代码将被忽略 false 引发有关无法访问代码的错误 allowUnusedLabels 允许未使用的标签 undefined 默认，提供建议警告 true 未使用的标签将被忽略 false 引发有关未使用标签的错误 alwaysStrict 始终严格模式，确保在 ECMAScript 严格模式下解析文件 并为每个源文件使用 use strict exactOptionalPropertyTypes 确切的可选属性类型 启用，TypeScript 处理属性或 type interfaces 具有?前缀的属性有更严格的规则 noUnusedLocals 报告未使用的变量 noUnusedParameters 报告未使用的参数 noFallthroughCasesInSwitch 防止 switch 语句贯穿 noEmit 禁止生成 js 文件 strict 严格模式 lib 库选项 编译时依赖的库 target 目标选项 tsc 编译代码时以哪个版本进行编译 module 指定生成哪个模块系统代码 None CommonJS AMD System UMD ES6 ES2015 ES2020 ES2022 ESNext rootDir 编译的文件目录 outDir tsc 编译后输出的文件目录 moduleResolution 模块解析策略 classic node10 node16 nodenext bundler node 采用 node 模块解析的方式查找文件 [从内往外查找 import 引入的文件] classic 采用 classic 模块解析的方式查找文件[从外往内查找 import 引入的文件] resolveJsonModule 是否支持引入 json 文件 allowJs 允许 JS 文件引入 checkJs 检查 JS 与 allowJs 配合使用 checkJs 启用时，js 文件会报告错误，相当于在 js 文件顶部包含 @ts-check 详细的编译器选项compilerOptions" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.gemc.club/posts/tsconfig-%E6%A0%B8%E5%BF%83%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-06-08T11:04:00+08:00" />
+<meta property="article:modified_time" content="2024-06-08T11:04:22+08:00" />
+<meta property="og:see_also" content="http://www.gemc.club/posts/learnning-typescript/" />
 
 
-    <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Blog"/>
-<meta name="twitter:description" content=""/>
+    <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="tsconfig 核心配置文件详解"/>
+<meta name="twitter:description" content="基本选项 compilerOptions include exclude extends compilerOptions 编译器选项，tsc 编译代码时会按照配置选项进行编译。
+allowUnreachableCode 不报告执行不到的代码错误 undefined 默认，提供建议作为警告 true 无法访问的代码将被忽略 false 引发有关无法访问代码的错误 allowUnusedLabels 允许未使用的标签 undefined 默认，提供建议警告 true 未使用的标签将被忽略 false 引发有关未使用标签的错误 alwaysStrict 始终严格模式，确保在 ECMAScript 严格模式下解析文件 并为每个源文件使用 use strict exactOptionalPropertyTypes 确切的可选属性类型 启用，TypeScript 处理属性或 type interfaces 具有?前缀的属性有更严格的规则 noUnusedLocals 报告未使用的变量 noUnusedParameters 报告未使用的参数 noFallthroughCasesInSwitch 防止 switch 语句贯穿 noEmit 禁止生成 js 文件 strict 严格模式 lib 库选项 编译时依赖的库 target 目标选项 tsc 编译代码时以哪个版本进行编译 module 指定生成哪个模块系统代码 None CommonJS AMD System UMD ES6 ES2015 ES2020 ES2022 ESNext rootDir 编译的文件目录 outDir tsc 编译后输出的文件目录 moduleResolution 模块解析策略 classic node10 node16 nodenext bundler node 采用 node 模块解析的方式查找文件 [从内往外查找 import 引入的文件] classic 采用 classic 模块解析的方式查找文件[从外往内查找 import 引入的文件] resolveJsonModule 是否支持引入 json 文件 allowJs 允许 JS 文件引入 checkJs 检查 JS 与 allowJs 配合使用 checkJs 启用时，js 文件会报告错误，相当于在 js 文件顶部包含 @ts-check 详细的编译器选项compilerOptions"/>
 
     
         
@@ -184,29 +190,36 @@
 
 
         <div id="content">
-    
 
 
 
 
-
-
-    
-        
-    
 
 
 
 
     <div class="hero">
         
-            
-                <div class="hero-img">
-                    <img class="lazyload" src="/images/thumbnail.gif" data-src="/images/default.jpg" alt="">
-                </div>
-            
+            <div class="hero-img">
+                <img class="lazyload" src="/images/thumbnail.gif" data-src="/images/default.jpg" alt="">
+            </div>
+        
         <div class="hero-content">
-            <h1 class="hero-title">Tag: Blog</h1>
+            <div class="hero-title">tsconfig 核心配置文件详解</div>
+            <div class="hero-subtitle"></div>
+            <div class="hero-date">
+                    <span class="no-wrap"><i class="fa fa-calendar"></i> postedOn: 2024-6-8 &nbsp;</span>
+                    <span class="no-wrap"><i class="fa fa-calendar-check-o"></i> updatedOn: 2024-6-8 &nbsp;</span>
+                    <span class="no-wrap"><i class="fa fa-folder"></i>
+                        notIncluded
+                        
+                    </span>    
+            </div>
+            <div class="timelong">
+                <span class="no-wrap"><i class="fa fa-pencil"></i> wordsCount: 143 &nbsp;</span>
+                <span class="no-wrap"><i class="fa fa-clock-o"></i> readingTime: 1 min &nbsp;</span>
+                <span class="no-wrap"><i class="fa fa-eye"></i> viewers: <span id="busuanzi_value_page_pv"></span></span>
+            </div>
         </div>
     </div>
 
@@ -225,7 +238,7 @@
     
 
 
-<div class="terms-body">
+<div class="content-root">
     <div class="long">
         <button class="tosides-1 text-wbd">
             <i class="fa fa-arrow-right"></i>
@@ -238,88 +251,185 @@
         </button>
     </div>
     
-        <div class="terms-row">
+        <div class="content">
+            <div class="content-self">
+                <h2 id="基本选项">基本选项</h2>
+<ul>
+<li>compilerOptions</li>
+<li>include</li>
+<li>exclude</li>
+<li>extends</li>
+</ul>
+<figure><img src="/ox-hugo/20240608_095542_awM5gv.png">
+</figure>
+
+<h3 id="compileroptions">compilerOptions</h3>
+<p>编译器选项，tsc 编译代码时会按照配置选项进行编译。</p>
+<ul>
+<li><a href="https://www.typescriptlang.org/tsconfig/#allowUnreachableCode">allowUnreachableCode</a>
+<ul>
+<li>不报告执行不到的代码错误</li>
+<li>undefined 默认，提供建议作为警告</li>
+<li>true 无法访问的代码将被忽略</li>
+<li>false 引发有关无法访问代码的错误</li>
+</ul>
+</li>
+<li><a href="https://www.typescriptlang.org/tsconfig/#allowUnusedLabels">allowUnusedLabels</a> 允许未使用的标签
+<ul>
+<li>undefined 默认，提供建议警告</li>
+<li>true 未使用的标签将被忽略</li>
+<li>false 引发有关未使用标签的错误</li>
+</ul>
+</li>
+<li><a href="https://www.typescriptlang.org/tsconfig/#alwaysStrict">alwaysStrict</a>
+<ul>
+<li>始终严格模式，确保在 ECMAScript 严格模式下解析文件</li>
+<li>并为每个源文件使用 use strict</li>
+</ul>
+</li>
+<li><a href="https://www.typescriptlang.org/tsconfig/#exactOptionalPropertyTypes">exactOptionalPropertyTypes</a>
+<ul>
+<li>确切的可选属性类型</li>
+<li>启用，TypeScript 处理属性或 type interfaces 具有?前缀的属性有更严格的规则</li>
+</ul>
+</li>
+<li><a href="https://www.typescriptlang.org/tsconfig/#noUnusedLocals">noUnusedLocals</a>
+<ul>
+<li>报告未使用的变量</li>
+</ul>
+</li>
+<li><a href="https://www.typescriptlang.org/tsconfig/#noUnusedParameters">noUnusedParameters</a>
+<ul>
+<li>报告未使用的参数</li>
+</ul>
+</li>
+<li><a href="https://www.typescriptlang.org/tsconfig/#noFallthroughCasesInSwitch">noFallthroughCasesInSwitch</a>
+<ul>
+<li>防止 switch 语句贯穿</li>
+</ul>
+</li>
+<li><a href="https://www.typescriptlang.org/zh/tsconfig/#noEmit">noEmit</a>
+<ul>
+<li>禁止生成 js 文件</li>
+</ul>
+</li>
+<li><a href="https://www.typescriptlang.org/zh/tsconfig/#strict">strict</a>
+<ul>
+<li>严格模式</li>
+</ul>
+</li>
+<li><a href="https://www.typescriptlang.org/tsconfig/#lib">lib</a>
+<ul>
+<li>库选项</li>
+<li>编译时依赖的库</li>
+</ul>
+</li>
+<li><a href="https://www.typescriptlang.org/tsconfig/#target">target</a>
+<ul>
+<li>目标选项</li>
+<li>tsc 编译代码时以哪个版本进行编译</li>
+</ul>
+</li>
+<li><a href="https://www.typescriptlang.org/tsconfig/#module">module</a>
+<ul>
+<li>指定生成哪个模块系统代码</li>
+<li>None CommonJS AMD System UMD ES6 ES2015 ES2020 ES2022 ESNext</li>
+</ul>
+</li>
+<li><a href="https://www.typescriptlang.org/tsconfig/#rootDir">rootDir</a>
+<ul>
+<li>编译的文件目录</li>
+</ul>
+</li>
+<li><a href="https://www.typescriptlang.org/tsconfig/#outDir">outDir</a>
+<ul>
+<li>tsc 编译后输出的文件目录</li>
+</ul>
+</li>
+<li><a href="https://www.typescriptlang.org/docs/handbook/modules/theory.html#module-resolution">moduleResolution</a>
+<ul>
+<li>模块解析策略</li>
+<li>classic node10 node16 nodenext bundler</li>
+<li>node
+<ul>
+<li>采用 node 模块解析的方式查找文件 [从内往外查找 import 引入的文件]</li>
+</ul>
+</li>
+<li>classic
+<ul>
+<li>采用 classic 模块解析的方式查找文件[从外往内查找 import 引入的文件]</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://www.typescriptlang.org/tsconfig/#resolveJsonModule">resolveJsonModule</a>
+<ul>
+<li>是否支持引入 json 文件</li>
+</ul>
+</li>
+<li><a href="https://www.typescriptlang.org/tsconfig/#allowJs">allowJs</a>
+<ul>
+<li>允许 JS 文件引入</li>
+</ul>
+</li>
+<li><a href="https://www.typescriptlang.org/tsconfig/#checkJs">checkJs</a>
+<ul>
+<li>检查 JS</li>
+<li>与 allowJs 配合使用</li>
+<li>checkJs 启用时，js 文件会报告错误，相当于在 js 文件顶部包含 @ts-check</li>
+</ul>
+</li>
+</ul>
+<p>详细的编译器选项<a href="https://www.tslang.cn/docs/handbook/compiler-options.html">compilerOptions</a></p>
+<h3 id="include">include</h3>
+<p>可以指定要编译的额路径列表，与 files 的区别在于，路径可以是文件夹，也可以是文件，可以使用相对和绝对路径，而且可以使用通配符，比如&quot;./src&quot;即表示要编译 src 文件夹下的所有文件以及子文件夹的文件</p>
+<p>更详细的配置<a href="https://www.typescriptlang.org/tsconfig/#include">include</a></p>
+<h3 id="exclude">exclude</h3>
+<p>exclude 表示要排除的、不编译的文件，它也可以指定一个列表，规则和 include 一样，可以是文件或文件夹，可以是相对路径或绝对路径，可以使用通配符</p>
+<p>更详细的配置<a href="https://www.typescriptlang.org/tsconfig/#exclude">exclude</a></p>
+<h3 id="extends">extends</h3>
+<p>extends 可以通过指定一个其他的 tsconfig.json 文件路径，来继承这个配置文件里的配置，继承来的文件的配置会覆盖当前文件定义的配置。TS 在 3.2 版本开始，支持继承一个来自 Node.js 包的 tsconfig.json 配置文件</p>
+<p>更详细的配置<a href="https://www.typescriptlang.org/tsconfig/#extends">extends</a></p>
+
+            </div>
             
-            <div class="terms-root">
-                
-                
-
-
-
-<div class="card-large">
-    <div class="card-large-img">
-
-        
-                <img class="lazyload" src="/images/thumbnail.gif" data-src="/images/default.jpg" alt='image loading failed'>
-        
-    </div>
-    <div class="card-large-content">
-        <div class="up-title"><a href="/posts/hugo-is-deployed-on-github-pages/">Hugo is deployed on GitHub Pages</a></div>
-        <div class="up-date">
-            <span class="no-wrap"><i class="fa fa-calendar"></i> postedOn: 2023-12-10 &nbsp;</span>
-            <span class="no-wrap"><i class="fa fa-calendar-check-o"></i> updatedOn: 2023-12-10 &nbsp;</span>
-            <span class="no-wrap"><i class="fa fa-folder"></i>
-                
-                    includedIn:
+                <div class="tags">
                     
-                        <a href='
-                                        /categories/hugo
-                                    '>
-                                hugo
-                            </a>
-                
-            </span>
+                </div>
+            
         </div>
-        <div class="down-summary">安装 hugo 环境 Arch Linux 部署 blog</div>
-    </div>
-    <div class="card-readmore">
-        <a href="http://www.gemc.club/posts/hugo-is-deployed-on-github-pages/">
-            <span><i class="fa fa-arrow-right"></i></span>
+        
+            
+                <div class="pre-next">
+                    
+    
+        
+        <a href="http://www.gemc.club/posts/learnning-typescript/" class="pre pre-last" style="text-align: center;">
+            <span class="pre-icon"><i class="fa fa-hand-o-left"></i></span>
+            <div class="pre-title-root">
+                <span>learnning-typescript</span>
+            </div>
         </a>
-    </div>
-</div>
-
-
-
+        
+    
     
 
+                </div>
+            
+        
+    
+</div>
 
-    <div class="down-type">
-        
-        <span class="down-type-item">
-            <div class="shuxian-root">
-                <div class="shuxian"></div>
-            </div>
-            <div class="type-text">
-                <a href='
-                            /tags/hugo
-                        '>
-                    <i class="fa fa-tag"></i> hugo
-                </a>
-            </div>
-        </span>
-        
-        <span class="down-type-item">
-            <div class="shuxian-root">
-                <div class="shuxian"></div>
-            </div>
-            <div class="type-text">
-                <a href='
-                            /tags/blog
-                        '>
-                    <i class="fa fa-tag"></i> blog
-                </a>
-            </div>
-        </span>
-        
-    </div>
-
-<div class="dang"></div>
-            </div>
+    
+        <div class="content-last">
+            
+                <button class="aixin content-last-item efct-button">
+                    <i class="fa fa-heart"></i>
+                </button>
+            
             
         </div>
     
-</div>
 
 
             </div>
@@ -396,34 +506,16 @@
 
 
 
+    
+    
+
 
 <div class="other">
     <div class="other-up">
-        <div class="other-qita text-wbd">latest Posts</div>
+        <div class="other-qita text-wbd">Related Posts</div>
         <div class="xian"></div>
     </div>
     <div class="list">
-        
-            <a href="http://www.gemc.club/posts/tsconfig-%E6%A0%B8%E5%BF%83%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/">
-                
-<a href="http://www.gemc.club/posts/tsconfig-%E6%A0%B8%E5%BF%83%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/">
-    <div class="list-item">
-        <div class="icon-other-root">
-            
-                <div class="icon-other" style="background-image: url( /images/default.jpg );"></div>
-            
-        </div>
-        <div class="list-right">
-            <div class="other-title">
-                tsconfig 核心配置文件详解
-            </div>
-            <div class="other-summary">基本选项 compilerOptions include exclude extends compilerOptions 编译器选项，tsc 编译代码时会按照配置选项进行编译。
-allowUnreachableCode 不报告执行不到的代码错误 undefined 默认，提供建议作为警告 true 无法访问的代码将被忽略 false 引发有关无法访问代码的错误 allowUnusedLabels 允许未使用的标签 undefined 默认，提供建议警告 true 未使用的标签将被忽略 false 引发有关未使用标签的错误 alwaysStrict 始终严格模式，确保在 ECMAScript 严格模式下解析文件 并为每个源文件使用 use strict exactOptionalPropertyTypes 确切的可选属性类型 启用，TypeScript 处理属性或 type interfaces 具有?前缀的属性有更严格的规则 noUnusedLocals 报告未使用的变量 noUnusedParameters 报告未使用的参数 noFallthroughCasesInSwitch 防止 switch 语句贯穿 noEmit 禁止生成 js 文件 strict 严格模式 lib 库选项 编译时依赖的库 target 目标选项 tsc 编译代码时以哪个版本进行编译 module 指定生成哪个模块系统代码 None CommonJS AMD System UMD ES6 ES2015 ES2020 ES2022 ESNext rootDir 编译的文件目录 outDir tsc 编译后输出的文件目录 moduleResolution 模块解析策略 classic node10 node16 nodenext bundler node 采用 node 模块解析的方式查找文件 [从内往外查找 import 引入的文件] classic 采用 classic 模块解析的方式查找文件[从外往内查找 import 引入的文件] resolveJsonModule 是否支持引入 json 文件 allowJs 允许 JS 文件引入 checkJs 检查 JS 与 allowJs 配合使用 checkJs 启用时，js 文件会报告错误，相当于在 js 文件顶部包含 @ts-check 详细的编译器选项compilerOptions</div>
-            <div class="other-date">2024-6-8</div>
-        </div>
-    </div>
-</a>
-            </a>
         
             <a href="http://www.gemc.club/posts/learnning-typescript/">
                 
@@ -522,6 +614,46 @@ rustc -V rustup show cargo &ndash;version rustup 基本使用 升级 rustup upda
 
             </div>
         </div>
+    </div>
+</div>
+
+    
+
+<div class="sponsor">
+    <div class="sponsor-self">
+        <div class="sponsor-title">Sponsor</div>
+        <div class="sponsor-btn">
+            
+                
+                    
+                        <div class="sponsor-btn-1 border-r">Wechat</div>
+                    
+                
+                
+            
+                
+                    
+                        <div class="sponsor-btn-2 border-l">Alipay</div>
+                    
+                
+                
+            
+        </div>
+        
+        <div class="sponsor-img">
+            
+                
+                    <img class="sponsor-img-1" src="/images/sponsor/wechat.jpeg" alt="">
+                
+                
+            
+                
+                    <img class="sponsor-img-2" src="/images/sponsor/alipay.jpeg" alt="" style="display: none;">
+                
+                
+            
+        </div>
+        <div class="cancel efct-button">cancel</div>
     </div>
 </div>
 
