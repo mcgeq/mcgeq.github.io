@@ -3,18 +3,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Mcge | Hugo</title>
-    <meta name="description" content=" ">
-    <link rel="canonical" href="http://www.gemc.club/categories/hugo/" />
+    <title>Mcge | JSX and Components</title>
+    <meta name="description" content="JSX 基础语法 JSX JS 的扩展，写在 JS 代码中，组件的 UI 结构 语法和 HTML 相似 使用 TypeScript 文件扩展为.tsx 使用 JavaScript 文件扩展为.jsx 标签 首字母大小写的区别，大写表示一个组件 标签必须闭合 属性 class 要使用 className style 要使用 JS 对象且 key 用驼峰写法 for 要使用 htmlFor 事件 格式为 onEvent 的形式 必须传入一个函数(fn 非 fn()) 注意 TypeScript 类型 使用变量 使用{variable}可以插入 JS 变量、函数、表达式 可以插入普通文件、属性 可用于注释 {* 注释 *} 条件判断 使用 &amp;&amp; {flag &amp;&amp; &lt;p&gt;mcge&lt;/p&gt;} 使用三元表达式 使用函数  ">
+    <link rel="canonical" href="http://www.gemc.club/posts/jsx-and-components/" />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <meta property="og:title" content="Hugo" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://www.gemc.club/categories/hugo/" />
+    <meta property="og:title" content="JSX and Components" />
+<meta property="og:description" content="JSX 基础语法 JSX JS 的扩展，写在 JS 代码中，组件的 UI 结构 语法和 HTML 相似 使用 TypeScript 文件扩展为.tsx 使用 JavaScript 文件扩展为.jsx 标签 首字母大小写的区别，大写表示一个组件 标签必须闭合 属性 class 要使用 className style 要使用 JS 对象且 key 用驼峰写法 for 要使用 htmlFor 事件 格式为 onEvent 的形式 必须传入一个函数(fn 非 fn()) 注意 TypeScript 类型 使用变量 使用{variable}可以插入 JS 变量、函数、表达式 可以插入普通文件、属性 可用于注释 {* 注释 *} 条件判断 使用 &amp;&amp; {flag &amp;&amp; &lt;p&gt;mcge&lt;/p&gt;} 使用三元表达式 使用函数 " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.gemc.club/posts/jsx-and-components/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-10-23T22:25:00+08:00" />
+<meta property="article:modified_time" content="2024-10-23T22:29:09+08:00" />
 
 
-    <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Hugo"/>
-<meta name="twitter:description" content=""/>
+
+    <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="JSX and Components"/>
+<meta name="twitter:description" content="JSX 基础语法 JSX JS 的扩展，写在 JS 代码中，组件的 UI 结构 语法和 HTML 相似 使用 TypeScript 文件扩展为.tsx 使用 JavaScript 文件扩展为.jsx 标签 首字母大小写的区别，大写表示一个组件 标签必须闭合 属性 class 要使用 className style 要使用 JS 对象且 key 用驼峰写法 for 要使用 htmlFor 事件 格式为 onEvent 的形式 必须传入一个函数(fn 非 fn()) 注意 TypeScript 类型 使用变量 使用{variable}可以插入 JS 变量、函数、表达式 可以插入普通文件、属性 可用于注释 {* 注释 *} 条件判断 使用 &amp;&amp; {flag &amp;&amp; &lt;p&gt;mcge&lt;/p&gt;} 使用三元表达式 使用函数 "/>
 
     
         
@@ -184,29 +187,36 @@
 
 
         <div id="content">
-    
 
 
 
 
-
-
-    
-        
-    
 
 
 
 
     <div class="hero">
         
-            
-                <div class="hero-img">
-                    <img class="lazyload" src="/images/thumbnail.gif" data-src="/images/default.jpg" alt="">
-                </div>
-            
+            <div class="hero-img">
+                <img class="lazyload" src="/images/thumbnail.gif" data-src="/images/default.jpg" alt="">
+            </div>
+        
         <div class="hero-content">
-            <h1 class="hero-title">Category: Hugo</h1>
+            <div class="hero-title">JSX and Components</div>
+            <div class="hero-subtitle"></div>
+            <div class="hero-date">
+                    <span class="no-wrap"><i class="fa fa-calendar"></i> postedOn: 2024-10-23 &nbsp;</span>
+                    <span class="no-wrap"><i class="fa fa-calendar-check-o"></i> updatedOn: 2024-10-23 &nbsp;</span>
+                    <span class="no-wrap"><i class="fa fa-folder"></i>
+                        notIncluded
+                        
+                    </span>    
+            </div>
+            <div class="timelong">
+                <span class="no-wrap"><i class="fa fa-pencil"></i> wordsCount: 61 &nbsp;</span>
+                <span class="no-wrap"><i class="fa fa-clock-o"></i> readingTime: 1 min &nbsp;</span>
+                <span class="no-wrap"><i class="fa fa-eye"></i> viewers: <span id="busuanzi_value_page_pv"></span></span>
+            </div>
         </div>
     </div>
 
@@ -225,7 +235,7 @@
     
 
 
-<div class="terms-body">
+<div class="content-root">
     <div class="long">
         <button class="tosides-1 text-wbd">
             <i class="fa fa-arrow-right"></i>
@@ -238,88 +248,97 @@
         </button>
     </div>
     
-        <div class="terms-row">
+        <div class="content">
+            <div class="content-self">
+                <h2 id="jsx-基础语法">JSX 基础语法</h2>
+<ul>
+<li>JSX JS 的扩展，写在 JS 代码中，组件的 UI 结构</li>
+<li>语法和 HTML 相似</li>
+</ul>
+<figure><img src="/ox-hugo/20240615_141219_U20wyS.png">
+</figure>
+
+<ul>
+<li>使用 TypeScript 文件扩展为.tsx</li>
+<li>使用 JavaScript 文件扩展为.jsx</li>
+</ul>
+<h3 id="标签">标签</h3>
+<ul>
+<li>首字母大小写的区别，大写表示一个组件</li>
+<li>标签必须闭合</li>
+</ul>
+<h3 id="属性">属性</h3>
+<ul>
+<li>class 要使用 className</li>
+<li>style 要使用 JS 对象且 key 用驼峰写法</li>
+<li>for 要使用 htmlFor</li>
+</ul>
+<h3 id="事件">事件</h3>
+<ul>
+<li>格式为 onEvent 的形式</li>
+<li>必须传入一个函数(fn 非 fn())</li>
+<li>注意 TypeScript 类型</li>
+</ul>
+<h3 id="使用变量">使用变量</h3>
+<ul>
+<li>使用{variable}可以插入 JS 变量、函数、表达式</li>
+<li>可以插入普通文件、属性</li>
+<li>可用于注释
+<ul>
+<li>{<strong>* 注释 *</strong>}</li>
+</ul>
+</li>
+</ul>
+<h3 id="条件判断">条件判断</h3>
+<ul>
+<li>使用 &amp;&amp;
+<ul>
+<li>{flag &amp;&amp; &lt;p&gt;mcge&lt;/p&gt;}</li>
+</ul>
+</li>
+<li>使用三元表达式</li>
+<li>使用函数</li>
+</ul>
+
+            </div>
             
-            <div class="terms-root">
-                
-                
-
-
-
-<div class="card-large">
-    <div class="card-large-img">
-
-        
-                <img class="lazyload" src="/images/thumbnail.gif" data-src="/images/default.jpg" alt='image loading failed'>
-        
-    </div>
-    <div class="card-large-content">
-        <div class="up-title"><a href="/posts/hugo-is-deployed-on-github-pages/">Hugo is deployed on GitHub Pages</a></div>
-        <div class="up-date">
-            <span class="no-wrap"><i class="fa fa-calendar"></i> postedOn: 2023-12-10 &nbsp;</span>
-            <span class="no-wrap"><i class="fa fa-calendar-check-o"></i> updatedOn: 2023-12-10 &nbsp;</span>
-            <span class="no-wrap"><i class="fa fa-folder"></i>
-                
-                    includedIn:
+                <div class="tags">
                     
-                        <a href='
-                                        /categories/hugo
-                                    '>
-                                hugo
-                            </a>
-                
-            </span>
+                </div>
+            
         </div>
-        <div class="down-summary">安装 hugo 环境 Arch Linux 部署 blog</div>
-    </div>
-    <div class="card-readmore">
-        <a href="http://www.gemc.club/posts/hugo-is-deployed-on-github-pages/">
-            <span><i class="fa fa-arrow-right"></i></span>
+        
+            
+                <div class="pre-next">
+                    
+    
+        
+        <a href="http://www.gemc.club/posts/learn-the-generics-of-typescript/" class="pre pre-last" style="text-align: center;">
+            <span class="pre-icon"><i class="fa fa-hand-o-left"></i></span>
+            <div class="pre-title-root">
+                <span>Learn the generics of TypeScript</span>
+            </div>
         </a>
-    </div>
-</div>
-
-
-
+        
+    
     
 
+                </div>
+            
+        
+    
+</div>
 
-    <div class="down-type">
-        
-        <span class="down-type-item">
-            <div class="shuxian-root">
-                <div class="shuxian"></div>
-            </div>
-            <div class="type-text">
-                <a href='
-                            /tags/hugo
-                        '>
-                    <i class="fa fa-tag"></i> hugo
-                </a>
-            </div>
-        </span>
-        
-        <span class="down-type-item">
-            <div class="shuxian-root">
-                <div class="shuxian"></div>
-            </div>
-            <div class="type-text">
-                <a href='
-                            /tags/blog
-                        '>
-                    <i class="fa fa-tag"></i> blog
-                </a>
-            </div>
-        </span>
-        
-    </div>
-
-<div class="dang"></div>
-            </div>
+    
+        <div class="content-last">
+            
+                <button class="aixin content-last-item efct-button">
+                    <i class="fa fa-heart"></i>
+                </button>
+            
             
         </div>
     
-</div>
 
 
             </div>
@@ -396,33 +415,16 @@
 
 
 
+    
+    
+
 
 <div class="other">
     <div class="other-up">
-        <div class="other-qita text-wbd">latest Posts</div>
+        <div class="other-qita text-wbd">Related Posts</div>
         <div class="xian"></div>
     </div>
     <div class="list">
-        
-            <a href="http://www.gemc.club/posts/jsx-and-components/">
-                
-<a href="http://www.gemc.club/posts/jsx-and-components/">
-    <div class="list-item">
-        <div class="icon-other-root">
-            
-                <div class="icon-other" style="background-image: url( /images/default.jpg );"></div>
-            
-        </div>
-        <div class="list-right">
-            <div class="other-title">
-                JSX and Components
-            </div>
-            <div class="other-summary">JSX 基础语法 JSX JS 的扩展，写在 JS 代码中，组件的 UI 结构 语法和 HTML 相似 使用 TypeScript 文件扩展为.tsx 使用 JavaScript 文件扩展为.jsx 标签 首字母大小写的区别，大写表示一个组件 标签必须闭合 属性 class 要使用 className style 要使用 JS 对象且 key 用驼峰写法 for 要使用 htmlFor 事件 格式为 onEvent 的形式 必须传入一个函数(fn 非 fn()) 注意 TypeScript 类型 使用变量 使用{variable}可以插入 JS 变量、函数、表达式 可以插入普通文件、属性 可用于注释 {* 注释 *} 条件判断 使用 &amp;&amp; {flag &amp;&amp; &lt;p&gt;mcge&lt;/p&gt;} 使用三元表达式 使用函数 </div>
-            <div class="other-date">2024-10-23</div>
-        </div>
-    </div>
-</a>
-            </a>
         
             <a href="http://www.gemc.club/posts/learn-the-generics-of-typescript/">
                 
@@ -511,6 +513,26 @@ rustc -V rustup show cargo &ndash;version rustup 基本使用 升级 rustup upda
 </a>
             </a>
         
+            <a href="http://www.gemc.club/posts/idea-custom-method-annotation/">
+                
+<a href="http://www.gemc.club/posts/idea-custom-method-annotation/">
+    <div class="list-item">
+        <div class="icon-other-root">
+            
+                <div class="icon-other" style="background-image: url( /images/default.jpg );"></div>
+            
+        </div>
+        <div class="list-right">
+            <div class="other-title">
+                idea_custom_method_annotation
+            </div>
+            <div class="other-summary">IDEA 自定义方法注释 使用快捷键=Ctrl+Alt+S=快捷键打开设置界面 点击 Editor-&gt;Live Templates 将 Tab 改成 Enter，点击 + 号，添加一个 Template Group，随便输入一个名称 新建之后选中，再次点击+号，新建一个 Live Template 给 Abbreviation 输入一个快捷键，比如**,Description 是描述，Template Text 是模板 Template Text 内容 模板不能以/开头，不然无法获取参数和方法返回类型 ** * @Description: TODO $params$ $return$ * @Author: $user$ $date$ $time$ * @Version 1.0 */ 编辑变量 params 代表方法的参数，这里将会统一对齐 1 groovyScript(&#34;if(\&#34;${_1}\&#34;.length() == 2) {return &#39;&#39;;} else {def result=&#39;&#39;; def params=\&#34;${_1}\&#34;.</div>
+            <div class="other-date">2024-2-28</div>
+        </div>
+    </div>
+</a>
+            </a>
+        
     </div>
 </div>
         </div>
@@ -522,6 +544,46 @@ rustc -V rustup show cargo &ndash;version rustup 基本使用 升级 rustup upda
 
             </div>
         </div>
+    </div>
+</div>
+
+    
+
+<div class="sponsor">
+    <div class="sponsor-self">
+        <div class="sponsor-title">Sponsor</div>
+        <div class="sponsor-btn">
+            
+                
+                    
+                        <div class="sponsor-btn-1 border-r">Wechat</div>
+                    
+                
+                
+            
+                
+                    
+                        <div class="sponsor-btn-2 border-l">Alipay</div>
+                    
+                
+                
+            
+        </div>
+        
+        <div class="sponsor-img">
+            
+                
+                    <img class="sponsor-img-1" src="/images/sponsor/wechat.jpeg" alt="">
+                
+                
+            
+                
+                    <img class="sponsor-img-2" src="/images/sponsor/alipay.jpeg" alt="" style="display: none;">
+                
+                
+            
+        </div>
+        <div class="cancel efct-button">cancel</div>
     </div>
 </div>
 

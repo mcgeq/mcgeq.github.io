@@ -6,8 +6,22 @@
     <description>Recent content in Posts on Mcge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Jun 2024 11:16:34 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 23 Oct 2024 22:29:09 +0800</lastBuildDate>
     <atom:link href="http://www.gemc.club/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JSX and Components</title>
+      <link>http://www.gemc.club/posts/jsx-and-components/</link>
+      <pubDate>Wed, 23 Oct 2024 22:25:00 +0800</pubDate>
+      <guid>http://www.gemc.club/posts/jsx-and-components/</guid>
+      <description>JSX 基础语法 JSX JS 的扩展，写在 JS 代码中，组件的 UI 结构 语法和 HTML 相似 使用 TypeScript 文件扩展为.tsx 使用 JavaScript 文件扩展为.jsx 标签 首字母大小写的区别，大写表示一个组件 标签必须闭合 属性 class 要使用 className style 要使用 JS 对象且 key 用驼峰写法 for 要使用 htmlFor 事件 格式为 onEvent 的形式 必须传入一个函数(fn 非 fn()) 注意 TypeScript 类型 使用变量 使用{variable}可以插入 JS 变量、函数、表达式 可以插入普通文件、属性 可用于注释 {* 注释 *} 条件判断 使用 &amp;amp;&amp;amp; {flag &amp;amp;&amp;amp; &amp;lt;p&amp;gt;mcge&amp;lt;/p&amp;gt;} 使用三元表达式 使用函数 </description>
+    </item>
+    <item>
+      <title>Learn the generics of TypeScript</title>
+      <link>http://www.gemc.club/posts/learn-the-generics-of-typescript/</link>
+      <pubDate>Wed, 23 Oct 2024 22:25:00 +0800</pubDate>
+      <guid>http://www.gemc.club/posts/learn-the-generics-of-typescript/</guid>
+      <description>Generics(泛型) 泛型定义 泛型是一种编程语言特性，其允许在定义函数、类、接口等时使用占位符来表示类型，而不是具体的类型。&#xA;具有以下特点的数据类型叫泛型&#xA;定义时不明确使用时必须明确成某种具体数据类型的数据类型。【泛型的宽泛】 编译期间进行数据类型检查的数据类型。【泛型的严谨】 </description>
+    </item>
     <item>
       <title>tsconfig 核心配置文件详解</title>
       <link>http://www.gemc.club/posts/tsconfig-%E6%A0%B8%E5%BF%83%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/</link>
