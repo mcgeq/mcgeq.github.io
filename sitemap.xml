@@ -2,85 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://www.gemc.club/posts/jsx-and-components/</loc>
-    <lastmod>2024-10-23T22:29:09+08:00</lastmod>
-  </url><url>
-    <loc>http://www.gemc.club/posts/learn-the-generics-of-typescript/</loc>
-    <lastmod>2024-10-23T22:28:56+08:00</lastmod>
-  </url><url>
     <loc>http://www.gemc.club/</loc>
-    <lastmod>2024-10-23T22:29:09+08:00</lastmod>
+    <lastmod>2024-10-26T15:46:30+08:00</lastmod>
   </url><url>
     <loc>http://www.gemc.club/posts/</loc>
-    <lastmod>2024-10-23T22:29:09+08:00</lastmod>
+    <lastmod>2024-10-26T15:46:30+08:00</lastmod>
   </url><url>
-    <loc>http://www.gemc.club/series/react/</loc>
-    <lastmod>2024-10-23T22:29:09+08:00</lastmod>
+    <loc>http://www.gemc.club/series/prattle/</loc>
+    <lastmod>2024-10-26T15:46:30+08:00</lastmod>
   </url><url>
     <loc>http://www.gemc.club/series/</loc>
-    <lastmod>2024-10-23T22:29:09+08:00</lastmod>
+    <lastmod>2024-10-26T15:46:30+08:00</lastmod>
   </url><url>
-    <loc>http://www.gemc.club/series/typescript/</loc>
-    <lastmod>2024-10-23T22:28:56+08:00</lastmod>
-  </url><url>
-    <loc>http://www.gemc.club/posts/tsconfig-%E6%A0%B8%E5%BF%83%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/</loc>
-    <lastmod>2024-06-08T11:16:34+08:00</lastmod>
-  </url><url>
-    <loc>http://www.gemc.club/posts/learnning-typescript/</loc>
-    <lastmod>2024-05-26T16:29:41+08:00</lastmod>
-  </url><url>
-    <loc>http://www.gemc.club/categories/</loc>
-    <lastmod>2024-04-21T21:03:14+08:00</lastmod>
-  </url><url>
-    <loc>http://www.gemc.club/tags/rust/</loc>
-    <lastmod>2024-04-21T21:03:14+08:00</lastmod>
-  </url><url>
-    <loc>http://www.gemc.club/series/rust/</loc>
-    <lastmod>2024-04-21T21:03:14+08:00</lastmod>
-  </url><url>
-    <loc>http://www.gemc.club/categories/software/</loc>
-    <lastmod>2024-04-21T21:03:14+08:00</lastmod>
-  </url><url>
-    <loc>http://www.gemc.club/tags/</loc>
-    <lastmod>2024-04-21T21:03:14+08:00</lastmod>
-  </url><url>
-    <loc>http://www.gemc.club/posts/%E7%AC%AC%E4%B8%80%E7%AB%A0-rust-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
-    <lastmod>2024-04-21T21:03:14+08:00</lastmod>
-  </url><url>
-    <loc>http://www.gemc.club/series/idea/</loc>
-    <lastmod>2024-02-28T21:35:23+08:00</lastmod>
-  </url><url>
-    <loc>http://www.gemc.club/posts/idea-custom-method-annotation/</loc>
-    <lastmod>2024-02-28T21:35:23+08:00</lastmod>
-  </url><url>
-    <loc>http://www.gemc.club/series/.net/</loc>
-    <lastmod>2024-01-13T14:43:41+08:00</lastmod>
-  </url><url>
-    <loc>http://www.gemc.club/posts/%E4%BB%80%E4%B9%88%E6%98%AF-.net-or-.net-framework-or-/</loc>
-    <lastmod>2024-01-13T14:43:41+08:00</lastmod>
+    <loc>http://www.gemc.club/posts/prattle/%E4%B8%80%E6%97%A5%E8%B0%88/</loc>
+    <lastmod>2024-10-26T15:46:30+08:00</lastmod>
   </url><url>
     <loc>http://www.gemc.club/about/</loc>
     <lastmod>2023-12-20T04:46:43+08:00</lastmod>
   </url><url>
-    <loc>http://www.gemc.club/categories/elisp/</loc>
-    <lastmod>2023-12-17T15:12:59+08:00</lastmod>
+    <loc>http://www.gemc.club/categories/</loc>
   </url><url>
-    <loc>http://www.gemc.club/tags/emacs/</loc>
-    <lastmod>2023-12-17T15:12:59+08:00</lastmod>
-  </url><url>
-    <loc>http://www.gemc.club/posts/emacs-%E7%9A%84-cl-lib-%E5%8C%85/</loc>
-    <lastmod>2023-12-17T15:12:59+08:00</lastmod>
-  </url><url>
-    <loc>http://www.gemc.club/tags/blog/</loc>
-    <lastmod>2023-12-10T13:33:42+08:00</lastmod>
-  </url><url>
-    <loc>http://www.gemc.club/tags/hugo/</loc>
-    <lastmod>2023-12-10T13:33:42+08:00</lastmod>
-  </url><url>
-    <loc>http://www.gemc.club/categories/hugo/</loc>
-    <lastmod>2023-12-10T13:33:42+08:00</lastmod>
-  </url><url>
-    <loc>http://www.gemc.club/posts/hugo-is-deployed-on-github-pages/</loc>
-    <lastmod>2023-12-10T13:33:42+08:00</lastmod>
+    <loc>http://www.gemc.club/tags/</loc>
   </url>
 </urlset>
