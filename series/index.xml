@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on Mcge</title>
-    <link>http://www.gemc.club/series/</link>
+    <link>https://www.mcgeq.com/series/</link>
     <description>Recent content in Series on Mcge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 28 Dec 2024 16:20:43 +0800</lastBuildDate>
-    <atom:link href="http://www.gemc.club/series/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.mcgeq.com/series/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Prattle</title>
-      <link>http://www.gemc.club/series/prattle/</link>
+      <link>https://www.mcgeq.com/series/prattle/</link>
       <pubDate>Sat, 28 Dec 2024 16:20:00 +0800</pubDate>
-      <guid>http://www.gemc.club/series/prattle/</guid>
+      <guid>https://www.mcgeq.com/series/prattle/</guid>
       <description></description>
     </item>
   </channel>
